@@ -34,9 +34,9 @@ function viewCart() {
           itemString = itemString - ',';
         }
         returnString = returnString + itemString;
-        console.log(`In your cart, you have ${returnString}.`)
     }
   }
+  console.log(`In your cart, you have ${returnString}.`)
 }
 
   // Two Item Prints 'In your cart, you have ${} and ${}.'
