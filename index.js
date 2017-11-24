@@ -20,7 +20,7 @@ function addToCart(itemName) {
 }
 
 function viewCart() {
-  if (cart.length === 0) {
+  if (cart.length == 0) {
     console.log('Your shopping cart is empty.');
   } else {
     var returnString = "";
@@ -28,11 +28,11 @@ function viewCart() {
       var keyName = Object.keys(cart[i]);
       var value = cart[i][keyName];
       var itemString = `${keyName} at $${value},`;
-        if (i === cart.length - 1) {
-          returnString = returnString + ' and ';
-        } else if (i === cart.length) {
-          itemString = itemString - ',';
-        }
+        // if (i === cart.length - 1) {
+        //   returnString = returnString + ' and ';
+        // } else if (i === cart.length) {
+        //   itemString = itemString - ',';
+        // }
         returnString = returnString + itemString;
     }
   }
