@@ -25,8 +25,8 @@ function viewCart() {
   } else {
     var returnString = "";
     for (var i = 0; i < cart.length - 1; i++) {
-      var keyName = Object.cart[i];
-      var value = cart.keyName;
+      var keyName = Object.keys(cart[i]);
+      var value = cart[i][keyName];
       var itemString = `${keyName} at $${value},`;
         if (i === length - 2) {
           returnString = returnString + ' and ';
