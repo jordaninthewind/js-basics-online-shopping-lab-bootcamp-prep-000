@@ -1,12 +1,12 @@
-var cart = [];
-
-function getCart() {
- return cart;
-}
-
-function setCart(new_cart) {
-  cart = new_cart;
-}
+// var cart = [];
+//
+// function getCart() {
+//  return cart;
+// }
+//
+// function setCart(new_cart) {
+//   cart = new_cart;
+// }
 
 function addToCart(itemName) {
  // Generate Random number
