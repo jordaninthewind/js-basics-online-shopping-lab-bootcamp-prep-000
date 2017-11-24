@@ -1,8 +1,10 @@
+
+
 function getCart() {
  return cart;
 }
 
-function setCart() {
+function setCart(cart) {
   return cart;
 }
 
