@@ -34,10 +34,10 @@ function viewCart() {
           returnString = returnString + " and " + itemString
         }
     }
-    returnString[returnString.length - 1] = "."
-  }
+  returnString[returnString.length - 1] = "."
   console.log(`In your cart, you have ${returnString}.`);
-}
+  }
+
 
   // Two Item Prints 'In your cart, you have ${} and ${}.'
   // Three or More Items Prints ...
