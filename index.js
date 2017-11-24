@@ -15,6 +15,7 @@ function addToCart(itemName) {
  // Push Item & Number to Cart as Object
   cart.unshift(newItem);
   console.log(`${itemName} has been added to your cart.`);
+  return cart;
 }
 
 function viewCart() {
