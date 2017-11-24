@@ -4,8 +4,9 @@ function getCart() {
  return cart;
 }
 
-function setCart(new_cart) {
-  cart = new_cart;
+function setCart(c) {
+  cart = c;
+  return cart;
 }
 
 function addToCart(itemName) {
@@ -21,7 +22,6 @@ function addToCart(itemName) {
 function viewCart() {
   if (cart.length == 0) {
     console.log('Your shopping cart is empty.');
-
   } else {
     var returnString = "";
     for (var i = 0; i < cart.length; i++) {
