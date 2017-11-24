@@ -22,6 +22,7 @@ function viewCart(cart) {
   // Empty Cart Return 'Your shopping cart is empty.'
   if (cart.length == 0) {
     console.log('Your shopping cart is empty.');
+
   } else {
     var returnString = "";
     for (var i = 0; i < cart.length - 1; i++) {
@@ -34,8 +35,8 @@ function viewCart(cart) {
           itemString = itemString - ',';
         }
         returnString = returnString + itemString;
+        console.log(`In your cart, you have ${returnString}.`)
     }
-    console.log(`In your cart, you have ${returnString}.`)
   }
 }
 
