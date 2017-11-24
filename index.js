@@ -4,9 +4,9 @@ function getCart() {
  return cart;
 }
 
-// function setCart(c) {
-//   return cart;
-// }
+function setCart() {
+  return cart;
+}
 
 function addToCart(itemName) {
  // Generate Random number
