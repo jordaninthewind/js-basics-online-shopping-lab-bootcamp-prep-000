@@ -18,7 +18,7 @@ function addToCart(itemName) {
   return cart;
 }
 
-function viewCart() {
+function viewCart(cart) {
   var returnString = "";
   // Empty Cart Return 'Your shopping cart is empty.'
   let length = cart.length
