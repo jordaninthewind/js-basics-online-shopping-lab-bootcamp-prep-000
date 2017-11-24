@@ -18,14 +18,13 @@ function addToCart(itemName) {
   return cart;
 }
 
-function viewCart(cart) {
+function viewCart() {
   var returnString = "";
   // Empty Cart Return 'Your shopping cart is empty.'
-  let length = cart.length
-  if (length == 0) {
+  if (cart.length == 0) {
     return 'Your shopping cart is empty.';
   } else {
-    for (var i = 0; i < length; i++) {
+    for (var i = 0; i < cart.length - 1; i++) {
       var keyName = Object.keys(cart[i]);
       var value = cart.keyName;
       var itemString = `${keyName} at $${value},`;
