@@ -33,9 +33,8 @@ function viewCart() {
         } else if (i === cart.length - 1)
           returnString = returnString + " and " + itemString
         }
-      
-
     }
+    returnString[returnString.length - 1] = "."
   }
   console.log(`In your cart, you have ${returnString}.`)
 }
