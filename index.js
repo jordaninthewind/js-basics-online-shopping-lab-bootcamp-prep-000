@@ -9,7 +9,7 @@ function setCart(c) {
   return cart;
 }
 
-function addToCart() {
+function addToCart(itemName) {
  // Generate Random number
  var itemPrice = Math.floor(Math.random() * 100);
  var newItem = {[itemName]: itemPrice};
@@ -30,7 +30,7 @@ function viewCart() {
       var itemString = ` ${keyName} at $${value},`;
         if (i < cart.length) {
           returnString = returnString + itemString;
-        } else if (i == cart.length - 1 && cart.length > 1) {
+        } else if (i == cart.length && cart.length > 1) {
           returnString = returnString + " and" + itemString
         }
       }
