@@ -20,16 +20,26 @@ function addToCart(itemName) {
 }
 
 function viewCart() {
+
+var returnString = "";
+
   if (cart.length == 0) {
     console.log('Your shopping cart is empty.');
+
+  } else if (cart.length == 1) {
+    var keyName = Object.keys(cart[i]);
+    var value = cart[i][keyName];
+    var itemString = ` ${keyName} at $${value},`;
+
   } else {
-    var returnString = "";
     for (var i = 0; i < cart.length; i++) {
       var keyName = Object.keys(cart[i]);
       var value = cart[i][keyName];
       var itemString = ` ${keyName} at $${value},`;
+
         if (i < cart.length - 1) {
           returnString = returnString + itemString;
+
         } else if (i == cart.length - 1 && cart.length > 1) {
           returnString = returnString + " and" + itemString
         }
