@@ -30,7 +30,7 @@ function viewCart() {
       var itemString = ` ${keyName} at $${value},`;
         if (i < cart.length) {
           returnString = returnString + itemString;
-        } else if (i === cart.length - 1)
+        } else {
           returnString = returnString + " and " + itemString
         }
     returnString = returnString.slice(0, -1);
