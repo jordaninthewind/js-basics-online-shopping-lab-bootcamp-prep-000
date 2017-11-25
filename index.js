@@ -31,7 +31,7 @@ function viewCart() {
         if (i < cart.length - 1) {
           returnString = returnString + itemString;
         } else {
-          returnString = returnString + " and " + itemString
+          returnString = returnString + " and" + itemString
         }
       }
     returnString = returnString.slice(0, -1);
