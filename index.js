@@ -27,14 +27,14 @@ function viewCart() {
     for (var i = 0; i < cart.length; i++) {
       var keyName = Object.keys(cart[i]);
       var value = cart[i][keyName];
-      var itemString = `${keyName} at $${value},`;
+      var itemString = ` ${keyName} at $${value},`;
         if (i < cart.length) {
           returnString = returnString + itemString;
         } else if (i === cart.length - 1)
           returnString = returnString + " and " + itemString
         }
     returnString = returnString.slice(0, -1);
-    console.log(`In your cart, you have ${returnString}.`);
+    console.log(`In your cart, you have${returnString}.`);
   }
 }
 
