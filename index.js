@@ -35,7 +35,7 @@ function viewCart() {
         }
     returnString = returnString.slice(0, -1);
     console.log(`In your cart, you have ${returnString}.`);
-    }
+  }
 }
 
 
