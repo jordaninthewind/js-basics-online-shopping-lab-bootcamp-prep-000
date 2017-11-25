@@ -22,7 +22,6 @@ function addToCart(itemName) {
 function viewCart() {
   if (cart.length == 0) {
     console.log('Your shopping cart is empty.');
-    return;
   } else {
     var returnString = "";
     for (var i = 0; i < cart.length; i++) {
@@ -34,9 +33,9 @@ function viewCart() {
         } else if (i === cart.length - 1)
           returnString = returnString + " and " + itemString
         }
+    returnString = returnString.slice(0, -1);
+    console.log(`In your cart, you have ${returnString}.`);
     }
-  returnString = returnString.slice(0, -1);
-  console.log(`In your cart, you have ${returnString}.`);
 }
 
 
