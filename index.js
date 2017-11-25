@@ -34,7 +34,7 @@ function viewCart() {
           returnString = returnString + " and " + itemString
         }
     }
-  returnString = returnString.slice(0, -1)
+  returnString = returnString.slice(0, -1);
   console.log(`In your cart, you have ${returnString}.`);
 }
 
