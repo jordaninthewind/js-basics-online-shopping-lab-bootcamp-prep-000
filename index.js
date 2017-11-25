@@ -28,7 +28,7 @@ function viewCart() {
       var keyName = Object.keys(cart[i]);
       var value = cart[i][keyName];
       var itemString = ` ${keyName} at $${value},`;
-        if (i < cart.length - 1) {
+        if (i < cart.length) {
           returnString = returnString + itemString;
         } else if (i == cart.length - 1 && cart.length > 1) {
           returnString = returnString + " and" + itemString
