@@ -28,16 +28,16 @@ function viewCart() {
       var keyName = Object.keys(cart[i]);
       var value = cart[i][keyName];
       var itemString = ` ${keyName} at $${value},`;
-        if (i < cart.length) {
+        if (i < cart.length - 1) {
           returnString = returnString + itemString;
         } else {
           returnString = returnString + " and " + itemString
         }
+      }
     returnString = returnString.slice(0, -1);
     console.log(`In your cart, you have${returnString}.`);
   }
 }
-
 
   // Two Item Prints 'In your cart, you have ${} and ${}.'
   // Three or More Items Prints ...
