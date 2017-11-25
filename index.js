@@ -30,7 +30,7 @@ var returnString = "";
     var keyName = Object.keys(cart[i]);
     var value = cart[i][keyName];
     var itemString = ` ${keyName} at $${value},`;
-
+    returnString = itemString;
   } else {
     for (var i = 0; i < cart.length; i++) {
       var keyName = Object.keys(cart[i]);
